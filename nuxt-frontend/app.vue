@@ -1,15 +1,17 @@
 <script setup>
-const getPosts = async () => {
-  console.log("TEDDEH")
-  const { data } = await useFetch("http://localhost:3001", {
-    method: "GET",
-  });
-};
+await useFetch("http://localhost:3001", {
+  method: "GET",
+  server: false,
+  immediate: true,
+  onResponse({ request, response, options }) {
+    console.log(response._data);
+    console.log("Successfully configured CORS");
+  },
+});
 </script>
 
 <template>
   <div>
-    <button type="button" @click="getPosts">Hehehes</button>
     <NuxtWelcome />
   </div>
 </template>
