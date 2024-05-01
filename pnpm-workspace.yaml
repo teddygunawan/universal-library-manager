@@ -1,0 +1,3 @@
+packages:
+  - express-backend
+  - nuxt-frontend

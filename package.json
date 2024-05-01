@@ -1,0 +1,15 @@
+{
+  "name": "nuxt-koa-starter",
+  "version": "1.0.0",
+  "description": "Starter for Nuxt 3 + Koa typescript projects",
+  "author": "Teddy Gunawan",
+  "private": false,
+  "type": "module",
+  "license": "MIT",
+  "keywords": ["nuxt", "koa", "nuxt koa starter"],
+  "scripts": {
+    "dev": "pnpm run /^dev:.*/",
+    "dev:frontend": "pnpm run --filter nuxt-frontend dev",
+    "dev:backend": "pnpm run --filter backend dev"
+  }
+}
