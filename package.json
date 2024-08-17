@@ -1,0 +1,17 @@
+{
+  "name": "universal-library-manager",
+  "version": "1.0.0",
+  "description": "Personal library manager",
+  "author": "Teddy Gunawan",
+  "private": false,
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "library manager"
+  ],
+  "scripts": {
+    "dev": "pnpm run /^dev:.*/",
+    "dev:frontend": "pnpm run --filter nuxt-frontend dev",
+    "dev:backend": "pnpm run --filter express-backend dev"
+  }
+}
